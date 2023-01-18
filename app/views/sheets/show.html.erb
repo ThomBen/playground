@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="fixed-upper-panel">
+    <div class="name">
+      Thomas Bensadoun
+    </div>
+    <div class="position">
+      Développeur Web
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3 panel-title">
+      <div class="title">
+        <%= @sheet.title %>
+      </div>
+      <div class="subtitle">
+        <%= @sheet.subtitle %>
+        <img src="/assets/disney" alt="disney castle drawn">
+      </div>
+    </div>
+    <div class="col-9 panel-pres">
+        <%= @sheet.content %>
+    </div>
+  </div>
+  <%= render partial: "fixed_lower_panel", sheet: @sheet %>
+</div>
