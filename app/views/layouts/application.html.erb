@@ -8,7 +8,8 @@
     <meta name="turbo-visit-control" content="reload">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%# <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %> %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
