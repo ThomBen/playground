@@ -18,6 +18,6 @@
   spanizeLetters.init();
 })(jQuery);
 
-if (document.getElementsByClassName('sequel')[0] != null) {
+if (document.getElementsByClassName('sequel')[0]) {
   setTimeout(function(){document.getElementsByClassName('sequel')[0].classList.remove('sequel')}, 5000);
 }

@@ -9,18 +9,19 @@
   .subtitle{
     padding: 10px 10px 10px 30px;
     margin-top: 3vh;
-    img{
-      position: absolute;
-      height: 45vh;
-      left:10px;
-      bottom:40px;
-      mix-blend-mode: difference;
-      opacity: 0.2;
-      transition: opacity 2s ease-in-out;
-    }
-    img:hover{
-      opacity:1;
-    }
+  }
+}
+
+.left-img{
+  position: absolute;
+  height: 45vh;
+  left:10px;
+  bottom:40px;
+  mix-blend-mode: difference;
+  opacity: 0.2;
+  transition: opacity 2s ease-in-out;
+  &:hover{
+    opacity:1;
   }
 }
 
@@ -158,4 +159,104 @@
 
 body{
   overflow: hidden;
+}
+
+.left-imgs img{
+  position: relative;
+  display: flex;
+  left: 10px;
+  height: 20vh;
+  opacity: 0.4;
+  transition: all 2s ease-in-out;
+  &:hover{
+    overflow: hidden;
+    opacity: 1;
+    height: 25vh;
+    z-index:1;
+  }
+}
+
+.lower-imgs img{
+  position: fixed;
+  height: 20vh;
+  opacity: 0.4;
+  transition: all 2s ease-in-out;
+  &:hover{
+    overflow: hidden;
+    opacity: 1;
+    height: 25vh;
+    z-index:1;
+  }
+}
+
+.four-setup{
+  .first{
+    position:absolute;
+    width: 20vw;
+    top: 45vh;
+    left: 2vw;
+    opacity: 0.4;
+    transition: all 2s ease-in-out;
+    &:hover{
+      overflow: hidden;
+      opacity: 1;
+      width: 25vw;
+      z-index:1;
+    }
+  }
+  .second{
+    position:absolute;
+    width: 20vw;
+    top: 70vh;
+    left: 2vw;
+    opacity: 0.4;
+    transition: all 2s ease-in-out;
+    &:hover{
+      overflow: hidden;
+      opacity: 1;
+      width: 25vw;
+      z-index:1;
+    }
+  }
+  .third{
+    height: 20vh;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    opacity: 0.4;
+    transition: all 2s ease-in-out;
+    &:hover{
+      overflow: hidden;
+      opacity: 1;
+      height: 25vh;
+      z-index:1;
+    }
+  }
+  .fourth{
+    height: 20vh;
+    margin-top: 4vh;
+    margin-right: 4vw;
+    opacity: 0.4;
+    transition: all 2s ease-in-out;
+    &:hover{
+      overflow: hidden;
+      opacity: 1;
+      height: 25vh;
+      z-index:1;
+    }
+  }
+}
+
+.diva{
+  margin-top: -5vh;
+}
+
+.logo-diva{
+  position: absolute;
+  width: 200px;
+  top: 190px;
+  opacity: 0.8;
+  mix-blend-mode: plus-lighter;
+  &:hover{
+    opacity: 1;
+  }
 }
