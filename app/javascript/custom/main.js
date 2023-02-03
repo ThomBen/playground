@@ -28,6 +28,87 @@ if (document.querySelectorAll(".col-4 img")[2]) {
   });
 }
 
+if (document.querySelectorAll(".white img")[0]){
+  document.querySelectorAll(".white img")[0].addEventListener("mouseover", function() {
+    document.querySelectorAll(".white img")[0].nextElementSibling.classList.remove('hidden');
+  });
+  document.querySelectorAll(".white img")[0].addEventListener("mouseout", function() {
+    document.querySelectorAll(".white img")[0].nextElementSibling.classList.add('hidden');
+  });
+}
+
+if (document.querySelectorAll(".white img")[1]){
+  document.querySelectorAll(".white img")[1].addEventListener("mouseover", function() {
+    document.querySelectorAll(".white img")[1].nextElementSibling.classList.remove('hidden');
+  });
+  document.querySelectorAll(".white img")[1].addEventListener("mouseout", function() {
+    document.querySelectorAll(".white img")[1].nextElementSibling.classList.add('hidden');
+  });
+}
+
+if (document.querySelectorAll(".white img")[2]){
+  document.querySelectorAll(".white img")[2].addEventListener("mouseover", function() {
+    document.querySelectorAll(".white img")[2].nextElementSibling.classList.remove('hidden');
+  });
+  document.querySelectorAll(".white img")[2].addEventListener("mouseout", function() {
+    document.querySelectorAll(".white img")[2].nextElementSibling.classList.add('hidden');
+  });
+}
+
+if (document.querySelectorAll(".img-des-e img")[0]){
+  document.querySelectorAll(".img-des-e img")[0].addEventListener("mouseover", function() {
+    document.querySelectorAll(".img-des-e img")[0].nextElementSibling.classList.remove('hidden');
+  });
+  document.querySelectorAll(".img-des-e img")[0].addEventListener("mouseout", function() {
+    document.querySelectorAll(".img-des-e img")[0].nextElementSibling.classList.add('hidden');
+  });
+}
+
+if (document.querySelectorAll(".img-des-f img")[0]){
+  document.querySelectorAll(".img-des-f img")[0].addEventListener("mouseover", function() {
+    document.querySelectorAll(".img-des-f img")[0].nextElementSibling.classList.remove('hidden');
+  });
+  document.querySelectorAll(".img-des-f img")[0].addEventListener("mouseout", function() {
+    document.querySelectorAll(".img-des-f img")[0].nextElementSibling.classList.add('hidden');
+  });
+}
+
+if (document.querySelectorAll(".img-des-g img")[0]){
+  document.querySelectorAll(".img-des-g img")[0].addEventListener("mouseover", function() {
+    document.querySelectorAll(".img-des-g img")[0].nextElementSibling.classList.remove('hidden');
+  });
+  document.querySelectorAll(".img-des-g img")[0].addEventListener("mouseout", function() {
+    document.querySelectorAll(".img-des-g img")[0].nextElementSibling.classList.add('hidden');
+  });
+}
+
+if (document.querySelectorAll(".img-des-h img")[0]){
+  document.querySelectorAll(".img-des-h img")[0].addEventListener("mouseover", function() {
+    document.querySelectorAll(".img-des-h img")[0].nextElementSibling.classList.remove('hidden');
+  });
+  document.querySelectorAll(".img-des-h img")[0].addEventListener("mouseout", function() {
+    document.querySelectorAll(".img-des-h img")[0].nextElementSibling.classList.add('hidden');
+  });
+}
+
+console.log('hi');
+console.log(document.documentElement.clientWidth);
+console.log(document.documentElement.clientHeight);
+
+if (document.querySelectorAll(".white-xl")[0]){
+  if (document.documentElement.clientHeight < 835){
+    document.querySelectorAll(".white-xl")[0].classList.add('hidden');
+    document.querySelectorAll(".pinboard-show")[0].addEventListener('onclick', function(){
+      document.querySelectorAll(".pinboard").classList.remove('hidden')
+    })
+  }
+  if (document.documentElement.clientHeight > 835){
+    document.querySelectorAll(".white-xl")[0].classList.remove('hidden');
+    document.querySelectorAll(".pinboard-show")[0].addEventListener('onclick', function(){
+      document.querySelectorAll(".pinboard").classList.add('hidden')
+    })
+  }
+}
 // if (document.querySelectorAll(".left-img img")[0]){
 //   document.querySelectorAll(".left-img img")[0].setAttribute('id', 'left-img');
 // }
