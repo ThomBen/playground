@@ -90,8 +90,6 @@ body {
   width: 100%;
   height: 100vh;
   color: #fff;
-  background-color: #111;
-  @include bg-overlay(#111, 0.9);
 
   &__bg {
     position: absolute;

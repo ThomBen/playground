@@ -18,6 +18,9 @@
     </div>
     <div class="col-9 panel-pres">
         <%= @sheet.content %>
+        <% if @sheet.subtitle === "Apprentissage et recherche" %>
+        <p class='left-ppv'><%= link_to 'Vous pouvez téléchargez mon CV ici, où vous trouverez mes informations de contact.', '/ThomasBensadoun.pdf' %></p>
+        <% end %>
     </div>
   </div>
   <%= render partial: "fixed_lower_panel", sheet: @sheet %>

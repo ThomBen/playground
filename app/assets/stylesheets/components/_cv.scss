@@ -22,6 +22,7 @@
   transition: opacity 2s ease-in-out;
   &:hover{
     opacity:1;
+    z-index: 1;
   }
   &_s{
     position: absolute;
@@ -31,6 +32,7 @@
     mix-blend-mode: difference;
     opacity: 0.2;
     transition: opacity 2s ease-in-out;
+    z-index: 1;
     &:hover{
       opacity:1;
     }
@@ -84,9 +86,11 @@
 .buttons-js{
   position: relative;
   width: 300px;
+  z-index: 1;
   img{
     position: relative;
     width: 100%;
+    z-index: 1;
   }
 }
 .button-right{
@@ -101,7 +105,6 @@
     transition: all 1s ease-in-out;
     &:hover {
       filter: brightness(1);
-      width: 55px;
     }
   }
 }
@@ -118,7 +121,6 @@
     transition: all 1s ease-in-out;
     &:hover {
       filter: brightness(1);
-      width: 55px;
     }
   }
 }
@@ -274,6 +276,8 @@ body{
 }
 
 .list-setup{
+  position: relative;
+  text-align: center;
   .first{
     height: 12vh;
     margin: 6vh 4vw 0 3vw;
@@ -285,12 +289,24 @@ body{
       height: 15vh;
       z-index:1;
     }
+    &_f{
+      height: 13vh;
+      margin: 5.5vh 4vw 0 3vw;
+      opacity: 0.8;
+      transition: all 2s ease-in-out;
+      &:hover{
+        overflow: hidden;
+        opacity: 1;
+        height: 15vh;
+        z-index:1;
+      }
+    }
   }
   .fivth{
     height: 6vh;
     position: relative;
     margin-top: 9vh;
-    margin-left: -2vw;
+    margin-left: -3vw;
     margin-right: 4vw;
     opacity: 0.7;
     transition: all 2s ease-in-out;
@@ -301,9 +317,9 @@ body{
       z-index:1;
     }
     &_r{
-      height: 7vh;
+      height: 6.5vh;
       position: relative;
-      margin-top: 8vh;
+      margin-top: 9vh;
       margin-right: 4vw;
       opacity: 0.7;
       transition: all 2s ease-in-out;
@@ -311,8 +327,23 @@ body{
       &:hover{
         overflow: hidden;
         opacity: 1;
-        height: 9vh;
-        z-index:1;
+        height: 8vh;
+        z-index: 1;
+      }
+    }
+    &__r{
+      height: 5.5vh;
+      position: relative;
+      margin-top: 9vh;
+      margin-right: 4vw;
+      opacity: 0.7;
+      transition: all 2s ease-in-out;
+      margin-left: 4vw;
+      &:hover{
+        overflow: hidden;
+        opacity: 1;
+        height: 6.5vh;
+        z-index: 1;
       }
     }
   }
@@ -347,22 +378,23 @@ body{
 }
 
 .white {
-  background-color: #484848;
+  background: linear-gradient(20deg, #1a1a1a, #534e4e);
   padding: 0 1vw 0 1vw;
   border-radius: 10px;
   height: 26vh;
   transition: all 2s ease-in-out;
-  margin: 4vh 20px 20px -10vw;
+  margin: 6vh 20px 20px -11vw;
   &:hover{
     background-color: #575757;
   }
   &-xl{
-    background-color: #484848;
+    background: linear-gradient(20deg, #1a1a1a, #534e4e);
     padding: 0 1vw 0 1vw;
     border-radius: 10px;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
+    opacity: 0.7;
     &:hover{
-      background-color: #575757;
+      opacity: 0.9;
     }
   }
 }
@@ -372,10 +404,9 @@ body{
 }
 
 .enl-r{
-  width: 800px;
+  width: 300px;
   margin-left: 4vw;
   &r{
-    width: 800px;
     margin-left: 7vw;
   }
   &f{
@@ -387,29 +418,44 @@ body{
     padding-left: 10px;
   }
   &w{
-    font-size:12px;
+    font-size: 12px;
+    &s{
+      font-size: 12px;
+    }
+    &u{
+      width: 195px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    &d{
+      width: 150px;
+      font-size: 13px;
+      padding-left: 108px;
+    }
   }
 }
 
 .stud{
   &-a{
     position: absolute;
-    bottom: 40vh;
-    left: 5vw;
+    bottom: 64vh;
+    left: 57vw;
     width: 10vw;
     mix-blend-mode: screen;
-    opacity: 0.8;
+    opacity: 0.2;
+    transform: rotate(-27deg);
     &:hover{
       opacity: 1;
     }
   }
   &-b{
     position: absolute;
-    bottom: 17vh;
-    left: 10vw;
+    bottom: 62vh;
+    left: 74vw;
     width: 10vw;
-    opacity: 0.8;
+    opacity: 0.2;
     mix-blend-mode: plus-lighter;
+    transform: rotate(5deg);
     &:hover{
       opacity: 1;
     }
@@ -422,21 +468,22 @@ body{
   }
   &-d{
     position: absolute;
-    bottom: 28vh;
-    left: 4vw;
-    width: 20vw;
-    opacity: 0.8;
+    bottom: 577px;
+    left: 28vw;
+    width: 318px;
+    opacity: 0.4;
     mix-blend-mode: plus-lighter;
+    transform: rotate(19deg);
     &:hover{
       opacity: 1;
     }
   }
   &-e{
-    width: 13vw;
+    width: 180px;
     border-radius: 5px;
     transition: all 1.5s ease-in-out;
     &:hover{
-      width: 15vw;
+      width: 220px;
     }
   }
   &-f{
@@ -462,11 +509,36 @@ body{
   &-h{
     width: 67px;
     opacity: 0.8;
+    z-index: 1;
     transition: all 1s ease-in-out;
     &:hover{
       width: 75px;
       opacity: 1;
       box-shadow: 0px 10px 25px #292929;
+    }
+  }
+  &-i{
+    width: 180px;
+    border-radius: 5px;
+    transition: all 1.5s ease-in-out;
+    &:hover{
+      width: 220px;
+    }
+  }
+  &-j{
+    width: 200px;
+    border-radius: 5px;
+    transition: all 1.5s ease-in-out;
+    &:hover{
+      width: 240px;
+    }
+  }
+  &-k{
+    width: 180px;
+    border-radius: 5px;
+    transition: all 1.5s ease-in-out;
+    &:hover{
+      width: 220px;
     }
   }
 }
@@ -476,8 +548,8 @@ body{
     position: absolute;
     display: flex;
     height: 92px;
-    top: 2vh;
-    left: 5vw;
+    top: 6vh;
+    left: 14vw;
     flex-direction: column;
     text-align: center;
   }
@@ -506,6 +578,39 @@ body{
     flex-direction: column;
     z-index: 1;
   }
+  &-i{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 220px;
+    height: 92px;
+    right: 17vw;
+    top: 6vh;
+    flex-direction: column;
+    z-index: 1;
+  }
+  &-j{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 200px;
+    height: 92px;
+    right: 19vw;
+    top: 25vh;
+    flex-direction: column;
+    z-index: 1;
+  }
+  &-k{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 20vw;
+    height: 92px;
+    left: 15vw;
+    top: 27vh;
+    flex-direction: column;
+    z-index: 1;
+  }
 }
 
 .paused{
@@ -513,23 +618,284 @@ body{
 }
 
 .acad{
-  margin-top: -9vh;
+  margin-top: -11vh;
 }
 
 .pinboard{
   position: absolute;
-  width: 70vw;
-  height: 43vh;
+  margin-left: -20vw;
+  width: 88vw;
+  height: 41vh;
 }
 
-@media (max-height: 835px) {
-  .pinboard{
+// @media (max-width: 835px) {
+//   .pinboard{
+//     position: absolute;
+//     width: 700px;
+//     height: 400px;
+//     top: 20vh;
+//   }
+//   .pinboard-show{
+//     display: block;
+//   }
+// }
+
+.lside-list{
+  border: solid 1px white;
+  padding: 22px;
+  border-radius: 5px;
+  &-l{
+    background: linear-gradient(40deg, #00000078, #000000c9),
+                url('https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/gallery/attractions/epcot/impressions-de-france/impressions-de-france-gallery01.jpg?1660846617767');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px #575757;
+    padding: 36px;
+    border-radius: 5px;
+    margin: 30px;
+    z-index: 1;
+    &:hover{
+      background: url('https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/gallery/attractions/epcot/impressions-de-france/impressions-de-france-gallery01.jpg?1660846617767');
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 1px 1px 30px #575757;
+      p{
+        opacity: 0;
+      }
+      ul{
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.rside-list{
+  border: solid 1px white;
+  margin-left: 10vw;
+  padding: 15px;
+  border-radius: 5px;
+  &-s{
+    background: linear-gradient(40deg, #00000078, #000000c9),
+                url('https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/things-to-do/dining/blizzard-beach/lottawatta-lodge/lottawatta-lodge-00.jpg?1662769323659');
+    margin: 63px 0px 55px 5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px #575757;
+    padding: 36px;
+    border-radius: 5px;
+    margin: 30px;
+    &:hover{
+      background: url('https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/things-to-do/dining/blizzard-beach/lottawatta-lodge/lottawatta-lodge-00.jpg?1662769323659');
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 1px 1px 30px #575757;
+      p{
+        opacity: 0;
+      }
+      ul{
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.logo-z img{
+  position: absolute;
+  top: 5vh;
+  right: 2vw;
+  width: 600px;
+  opacity: 0.8;
+  /* mix-blend-mode: plus-lighter; */
+  -webkit-filter: drop-shadow(1px 1px 5px rgb(213, 213, 213));
+  filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+  transition: all 2s ease-in-out;
+  &:hover{
+    opacity: 1;
+    -webkit-filter: drop-shadow(1px 1px 30px rgb(255, 255, 255));
+    filter: drop-shadow(1px 1px 30px rgb(255, 255, 255));
+  }
+}
+
+.l-large{
+  margin-left: -5vw;
+}
+
+.imgpos{
+  &_1{
     position: absolute;
-    width: 700px;
-    height: 400px;
-    top: 20vh;
+    width: 200px;
+    left: 10px;
+    bottom: -10px;
   }
-  .pinboard-show{
-    display: block;
+  &_2{
+    position: absolute;
+    width: 40px;
+    left: 116px;
+    bottom: 63px;
   }
+  &_3{
+    position: absolute;
+    width: 137px;
+    left: 240px;
+    bottom: 30px;
+  }
+  &_4{
+    position: absolute;
+    width: 107px;
+    right: 20px;
+    bottom: -30px;
+  }
+  &_5{
+    position: absolute;
+    width: 122px;
+    right: 103px;
+    bottom: 16px;
+    z-index: 1;
+  }
+  &_6{
+    position: absolute;
+    width: 200px;
+    left: 240px;
+  }
+}
+
+.center_des{
+  &_a{
+    position: absolute;
+    bottom: 33px;
+  }
+  &_b{
+    position: absolute;
+    bottom: 33px;
+  }
+  &_c{
+    position: absolute;
+    bottom: 33px;
+  }
+}
+
+.left-p{
+  margin: 6vh 0 0 -10vw;
+  &pa{
+    margin: 6vh 0 0 -26vw;
+  }
+  &pv{
+    margin: 6vh -26vw;
+  }
+  &pi{
+    margin: 6vh 0 0 -14vw;
+  }
+}
+
+.cpl_left{
+  &_a{
+    position: absolute;
+    margin-left: -4vw;
+    left: 4vw;
+    bottom: 28vh;
+    width: 153px;
+    transition: all 2s ease-in-out;
+    &:hover {
+      width: 190px;
+      z-index: 1;
+    }
+  }
+  &_b{
+    position: absolute;
+    margin-left: -4vw;
+    left: 4vw;
+    bottom: 22vh;
+    width: 153px;
+    transition: all 2s ease-in-out;
+    &:hover {
+      width: 190px;
+      z-index: 1;
+    }
+  }
+  &_c{
+    position: absolute;
+    margin-left: -4vw;
+    left: 4vw;
+    bottom: 32vh;
+    font-weight: 800;
+    color:#575757;
+  }
+}
+
+.left-p a{
+  text-decoration: none;
+  color: white;
+  -webkit-filter: drop-shadow(1px 1px 1px white);
+  filter: drop-shadow(1px 1px 1px white);
+  &:hover{
+    -webkit-filter: none;
+    filter: none;
+    color: var(--bs-link-hover-color);
+  }
+}
+
+.left-ppv a{
+  text-decoration: none;
+  color: white;
+  -webkit-filter: drop-shadow(1px 1px 1px white);
+  filter: drop-shadow(1px 1px 1px white);
+  &:hover{
+    -webkit-filter: none;
+    filter: none;
+    color: var(--bs-link-hover-color);
+  }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  &:hover{
+    color: var(--bs-link-hover-color);
+  }
+}
+
+.follow-m{
+  position: absolute;
+  bottom: 0;
+  right: 18vw;
+  display: flex;
+  flex-direction: column;
+  background: #2f2f2f;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 1;
+  p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  img{
+    background: #5e5e5e;
+  }
+  .fir{
+    width: 200px;
+    padding-right: 25px;
+    padding-left: 25px;
+    transition: all 2s ease-in-out;
+  }
+  .sec{
+    width: 200px;
+    padding: 10px 20px;
+    transition: all 2s ease-in-out;
+  }
+  &:hover{
+    .fir{
+      width: 250px;
+    }
+    .sec{
+      width: 250px;
+    }
+  }
+}
+
+.catdoor img{
+  width: 120px;
+  position: absolute;
+  bottom: 10vh;
+  left: 35vw;
+  transition: all 2s ease-in-out;
 }

@@ -9,32 +9,45 @@ Sheet.create(
   title: "Expérience professionnelle",
   subtitle: "Employé polyvalent (Cast Member) - Disney World",
   content: "
-    <p>J'ai occupé durant un semestre le poste de Cast Member à Disney World Orlando, FL.</p>
-    <p>Au contact d'une clientèle internationale, j'ai ainsi travaillé mon aisance au discours oral (français et anglais) ainsi que ma capacité d'adaptation.</p>
-    <p>Puis après un long semestre riche en expérience et en rencontres, je suis revenu en France afin de terminer mon Bachelor en Communication et Marketing.</p>
-    <div class='row d-flex text-center pt-3'>
-      <div class='col-4'>
-        <img src='/assets/cdm' alt='photo après la victoire de la france à la coupe du monde 2018'>
-        <p class='hidden mast__text js-spanize'>Vivre la victoire de France 2018 depuis l'étranger</p>
+  <div class='acad l-large'>
+    <p>J'ai acquis un visa J-1 afin de partir aux Etats-Unis pour travailler à Disney World durant mes études
+    et participé au college program de Disney.
+    <p>Grâce à l'université de Californie Riverside, par des cours en lignes, et grâce à l'université de Disney, j'ai obtenu respectivement une certification en management et une autre en lean management.</p>
+    <p>J'ai occupé de multiples positions au sein des Parks Disney World à Orlando, FL. Mon affectation principale était
+    en attractions, au French Theater du pavillon français d'Epcot durant 4 mois, et en Food&Beverage au Lottawatta Lodge de Blizzard Beach durant deux mois.</p>
+    <div class='row d-flex justify-content-center'>
+      <div class='col-5 lside-list-l'>
+        <p>Impressions de France - Attractions</p>
+        <ul>
+          <li>Assurer le respect des consignes de sécurité</li>
+          <li>Accueil et assistance des guests dans le theater (Greeter)</li>
+          <li>Gestion du timing de chaque séance et de l'accompagnement des guests</li>
+          <li>Mémorisation et répétition de discours (spiel)</li>
+          <li>Accueil et assistance des guests sur la promenade</li>
+        </ul>
       </div>
-      <div class='col-4'>
-        <img src='/assets/première-tenue.jpg' alt='uniforme premier job'>
-        <p class='hidden mast__text js-spanize'>Premier uniforme</p>
-      </div>
-      <div class='col-4'>
-        <img src='/assets/badge' alt='badge disney avec mon nom'>
-        <p class='hidden mast__text js-spanize'>Badge</p>
+      <div class='col-5 rside-list-s'>
+        <p>Lottawatta Lodge - Food & Beverage</p>
+        <ul>
+          <li>Serveur et travail de comptoir</li>
+          <li>Accueil et assistance des guests dans le parc (Greeter)</li>
+          <li>Préparation des commandes en fenêtre</li>
+          <li>Nettoyage de fin de service</li>
+          <li>Gestion des stocks</li>
+        </ul>
       </div>
     </div>
-    <div class='logo-x'>
+    <p class='text-center'>J'ai ainsi pu travaillé mon anglais au coté de collègues et d'une clientèle originaire des quatres coins du monde.</p>
+    <div class='logo-z'>
       <img src='https://upload.wikimedia.org/wikipedia/commons/5/5a/Walt_Disney_World_Logo_2018.svg' alt='Logo Disney'>
     </div>
     <div>
       <img src='/assets/disney' alt='disney castle drawn' class='left-img'>
     </div>
+  </div>
   "
 )
-puts "first sheet done"
+puts "disney done"
 
 puts "second sheet"
 Sheet.create(
@@ -61,13 +74,13 @@ Sheet.create(
           <img src='/assets/21/CE4' alt='capture du site' class='fourth'>
         </div>
         <div>
-          <img src='/assets/DIVA' alt='Logo DIVA' class='logo-diva'>
+          <img src='/assets/DIVA' alt='Logo DIVA' class='stud-c logo-diva'>
         </div>
       </div>
     </div>
   "
 )
-puts "second sheet done"
+puts "DIVA done"
 
 Sheet.create(
   title: "Expérience professionnelle",
@@ -97,19 +110,19 @@ Sheet.create(
   <div>
     <img src='/assets/l_lydia' alt='Lydia app sur téléphone' class='left-img_s'>
   </div>
-  <div class='logo-y'>
-    <img src='https://uploads-ssl.webflow.com/5f4e38c152cd205192a8b27d/5f60b99e8009d049578bf915_logo-lydia.png' alt='Logo Lydia'>
+  <div>
+    <img src='https://uploads-ssl.webflow.com/5f4e38c152cd205192a8b27d/5f60b99e8009d049578bf915_logo-lydia.png' alt='Logo Lydia' class='stud-c'>
   </div>
   "
 )
-puts "third sheet done"
+puts "Lydia done"
 
 Sheet.create(
   title: "Parcours académique",
   subtitle: "Bachelor - ESG",
   content: "
   <div class='acad'>
-    <p>A partir de novembre 2017, j'ai commencé un bachelor à l'ESG Bordeaux</p>
+    <p>À partir de novembre 2017, j'ai commencé un bachelor à l'ESG Bordeaux</p>
     <p>Durant ces trois années, j'ai appris à réaliser un business plan et à créer différents supports de communication.</p>
     <p>C'est pendant ce bachelor que j'ai effectué un stage de deux mois chez DIVA Bordeaux, réaliser un semaine à l'étranger en travaillant pour Disney World, et entrepris mon activité de Freelance chez Lydia.</p>
     <p>J'y ai aussi entrepris l'apprentissage de Wordpress avec la naissance de mon premier site à l'époque (<a href='https://tombsn17.wixsite.com/curriculum'>voir ici</a>)</p>
@@ -120,9 +133,10 @@ Sheet.create(
     <div class='pinboard-show hidden'>
       <p>Les skills pratiqués</p>
     </div>
+    <br>
     <div class='pinboard white-xl'>
       <div class='img-des-e'>
-        <img src='/assets/WordPress-alt.png' alt='wordpress' class='stud-e'>
+        <img src='/assets/WordPress-alt.png' alt='logo wordpress' class='stud-e'>
         <p class='hidden mast__text js-spanize enl-rw'>Niveau avancé</p>
       </div>
       <div class='img-des-f'>
@@ -137,8 +151,91 @@ Sheet.create(
         <img src='/assets/illustrator' alt='wordpress' class='stud-h'>
         <p class='hidden mast__text js-spanize enl-rf'>Niveau intermédiaire</p>
       </div>
+      <div class='img-des-i'>
+        <img src='https://adarna.co.za/wp-content/uploads/2020/04/shopify-logo-white.png' alt='logo shopify' class='stud-i'>
+        <p class='hidden mast__text js-spanize enl-rws'>Niveau intermédiaire</p>
+      </div>
+      <div class='img-des-j'>
+        <img src='https://upload.wikimedia.org/wikipedia/fr/thumb/f/f7/Deliveroo_logo.svg/2560px-Deliveroo_logo.svg.png' alt='logo deliveroo' class='stud-j'>
+        <p class='hidden mast__text js-spanize enl-rwd'>Freelance</p>
+      </div>
+      <div class='img-des-k'>
+        <img src='https://brand.ucr.edu/sites/default/files/styles/form_preview/public/UC%20Primary%20Logo%20CMYK.png?itok=bxXmXEkH' alt='UCR Riverside' class='stud-k'>
+        <p class='hidden mast__text js-spanize enl-rwu'>Certification en Management</p>
+      </div>
     </div>
+</div>
+  "
+)
+puts "ESG Done"
+
+Sheet.create(
+  title: "Parcours académique",
+  subtitle: "Le Wagon",
+  content: "
+  <div class='acad'>
+    <p>J'ai complété le bootcamp intensif du Wagon Bordeaux.
+    Durant neuf semaines, nous avons appris à concevoir une application, from scratch, via Ruby on Rails.
+    Ainsi, nous avons travaillé sur des outils tels que Figma, Notions et Github.
+    Nous avons réalisé à la fin du bootcamp, par groupe, une application par nous même pour valider notre formation.</p>
+    <a href='https://github.com/Sdaje/recyclEarn'><img src='/assets/logo-white' alt='' class='cpl_left_a'></a>
+    <a href='https://github.com/sebastienbourda/cook-4-me'><img src='/assets/logo-c4m' alt='' class='cpl_left_b'></a>
+    <p class='cpl_left_c'>Liens Github</p>
+    <p class='left-p'>Avec <a href='https://github.com/Sdaje'>Sylvain Dajens</a> et <a href='https://github.com/sebastienbourda'>Sébastien Bourda</a>, nous avons créer Recycl'earn, une app qui aide les étudiants qui commencent leur vie à découvrir les bonnes pratiques de recyclage et retrouver via l'application les bornes de recyclage ou de compostage les plus proches ainsi que Cook4Me, une app de mise en relation avec des cuisiniers amateurs et professionnels pour une expérience culinaire maison d'un soir.</p>
+    <img src='https://www.seekpng.com/png/full/435-4352033_le-wagon.png' alt='Le Wagon Logo' class='stud-c'>
+    <div class='list-setup row white'>
+        <div class='col-5'>
+        <img src='https://cdn.shopify.com/s/files/1/0250/4150/2293/articles/figma-logo-carre.png?v=1638195966' alt='Le Wagon Logo' class='first_f'>
+        </div>
+        <div class='col-3'>
+        <img src='https://png.monster/wp-content/uploads/2022/02/png.monster-703.png' alt='Github Logo' class='fivth ja'>
+        </div>
+      <div class='col-3'>
+        <img src='https://i0.wp.com/get.site/wp-content/uploads/2021/10/notion-logo.png?ssl=1' alt='Slack logo' class='fivth__r ja'>
+      </div>
+      <p class='hidden mast__text js-spanize center_des_a'>Figma pour la création de maquette et de prototypes navigables</p>
+      <p class='hidden mast__text js-spanize center_des_b'>Github pour le partage et le travail en équipe</p>
+      <p class='hidden mast__text js-spanize center_des_c'>Notions pour l'ajout et l'attribution des tâches en équipe</p>
+    </div>
+    <img src='https://download.logo.wine/logo/Ruby_on_Rails/Ruby_on_Rails-Logo.wine.png' alt='logo ruby on rails' class='imgpos_1'>
+    <img src='/assets/ruby_logo' alt='' class='imgpos_2'>
+    <img src='/assets/html_css_js' alt='' class='imgpos_3'>
+    <img src='http://www.impulsmap.fr/wp-content/uploads/2016/07/LogoPostgreSql100reel.png' alt='' class='imgpos_4'>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png' alt='' class='imgpos_5'>
   </div>
   "
 )
+puts "Wagon sheet done"
+
+Sheet.create(
+  title: "Situation actuelle",
+  subtitle: "Apprentissage et recherche",
+  content: "
+  <div class='acad'>
+  <p>J'ai suite à mon bachelor, lors du début du COVID, commencé à travailler de chez moi en tradant sur le marché boursier, étant de nature curieuse, j'ai du mettre en pause
+  mes autres activités pour me consacrer à apprendre tout ce qui pouvait me servir à comprendre la valeur d'un stock à un instant t (intrinsèque et extrinsèque) afin de pouvoir
+  trader et investir responsablement.</p>
+  <p class='left-p'>Je préfère cependant créer de la valeur pour gagner ma vie plutôt que scalper les mouvements boursiers ce qui m'a donc conduit à récemment accroître mon temps d'apprentissage en informatique.
+  Je recherche aujourd'hui un travail dans le développement d'application web, afin de produire des fonctionnalités et de pouvoir compléter et étendre mon champ d'expertise dans les technologies du web.</p>
+  <p class='left-ppi'>Je parle couramment français et anglais. J'ai un bachelor en commerce, marketing et communication ainsi que des compétences en informatique qui comprennent Ruby on Rails, JS (dont React et Node), Python, Html et Css. J'ai aussi eu l'opportunité de participer à la réalisation de sites web professionelles via des CMO tels que Wordpress et Shopify.</p>
+  <p class='left-ppa text-center'>Si vous avez besoin d'un développeur d'application web qui touche à tout, n'hésitez pas et contactez moi, je serais ravi d'échanger avec vous.</p>
+  <div class='follow-m'>
+    <p>Ajoutez moi</p>
+      <a href='https://github.com/ThomBen'><img class='fir' src='https://png.monster/wp-content/uploads/2022/02/png.monster-703.png' alt='Logo Github'></a>
+      <br>
+      <a href='https://www.codewars.com/users/Tembo_'><img class='sec' src='https://camo.githubusercontent.com/d3dd4b287f8297ce87880374d2f99abf9b102865192edebf37e3628aa50b951d/68747470733a2f2f7777772e7175616c69666965642e696f2f7368617265642f696d616765732f636f6465776172732d626c61636b2d6c617267652d32346139643335352e706e67' alt='Logo Codewars'></a>
+  </div>
+  <img src='https://download.logo.wine/logo/Ruby_on_Rails/Ruby_on_Rails-Logo.wine.png' alt='logo ruby on rails' class='imgpos_1'>
+  <img src='/assets/ruby_logo' alt='' class='imgpos_2'>
+  <img src='/assets/html_css_js' alt='' class='imgpos_3'>
+  <img src='http://www.impulsmap.fr/wp-content/uploads/2016/07/LogoPostgreSql100reel.png' alt='' class='imgpos_4'>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png' alt='' class='imgpos_5'>
+  <img src='/assets/DIVA' alt='Diva Bordeaux Logo' class='stud-a'>
+  <img src='https://uploads-ssl.webflow.com/5f4e38c152cd205192a8b27d/5f60b99e8009d049578bf915_logo-lydia.png' alt='Lydia Solutions Logo' class='stud-b'>
+  <img src='/assets/ESG-logo' alt='ESG Logo' class='stud-c'>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/5/5a/Walt_Disney_World_Logo_2018.svg' alt='Disney World Logo' class='stud-d'>
+</div>
+  "
+)
+
 puts "last sheet done"

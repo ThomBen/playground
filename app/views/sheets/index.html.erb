@@ -1,7 +1,14 @@
-<div class="container-fluid">
-  <div class="fixed-upper-panel">
-    <div class="name">
-      <%= link_to "CV1", sheet_path(Sheet.all.first) %>
-    </div>
+<main>
+  <div class="mast container">
+    <header class="mast__header">
+      <div class="">
+          <p class="mast__text js-spanize py-3">
+    Personne n'aime PowerPoint</p>
+          <p class="mast__text js-spanize py-3">
+    Je me suis donc amusé à créer mon propre powerpoint via Ruby on Rails. Vous pouvez découvrir le lien vers celui-ci en cliquant sur le chat.</p>
+      </div>
+      <%= link_to image_tag("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/59a6349b-7a40-4af2-bf9a-3a13ddf42093/dckaiww-3816a03c-7acd-4b79-ab35-4d399b81a1df.png/v1/fill/w_1024,h_867,strp/a_small__white_kitten_on_a_transparent_background_by_zoostock_dckaiww-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU5YTYzNDliLTdhNDAtNGFmMi1iZjlhLTNhMTNkZGY0MjA5M1wvZGNrYWl3dy0zODE2YTAzYy03YWNkLTRiNzktYWIzNS00ZDM5OWI4MWExZGYucG5nIiwiaGVpZ2h0IjoiPD04NjciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC81OWE2MzQ5Yi03YTQwLTRhZjItYmY5YS0zYTEzZGRmNDIwOTNcL3pvb3N0b2NrLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.Q4OHu4tAM78WkcwA9hU6CE06aLkW7D5Rh68QPWPUWnA"), sheet_path(Sheet.first.id), :class => 'catdoor sequel' %>
+    </header>
   </div>
-</div>
+  <p class="mast__text js-spanize" id="version">Version ßeta</p>
+</main>
