@@ -404,10 +404,11 @@ body{
 }
 
 .enl-r{
-  width: 300px;
-  margin-left: 4vw;
+  width: 250px;
+  margin-left: 8vw;
+  text-align: left;
   &r{
-    margin-left: 7vw;
+    margin-left: 2vw;
   }
   &f{
     margin-left: -34px;
@@ -777,7 +778,7 @@ body{
 .left-p{
   margin: 6vh 0 0 -10vw;
   &pa{
-    margin: 6vh 0 0 -26vw;
+    margin: 6vh 0 0 -22vw;
   }
   &pv{
     margin: 6vh -26vw;
@@ -898,4 +899,44 @@ a{
   bottom: 10vh;
   left: 35vw;
   transition: all 2s ease-in-out;
+}
+
+.dir_panel{
+  position: absolute;
+  top: 0;
+  left: 30vw;
+  width: 45vw;
+  height: 5vh;
+  border: solid 1px #474747;
+  background: #1c1c1d;
+  color: antiquewhite;
+  font-size: 13px;
+  padding: 40px 10px 0 75px;
+  box-shadow: 1px 1px 15px #383839;
+  border-radius: 0 0 10px 10px;
+  transition: all 2s ease-in-out;
+  overflow: hidden;
+  h2{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    width: 78%;
+    text-align: center;
+    margin-top: -24px;
+    opacity: 1;
+    transition: all 2s ease-in-out;
+  }
+  p{
+    opacity: 0;
+    transition: all 2s ease-in-out;
+  }
+  &:hover{
+    height: 370px;
+    p{
+      opacity: 1;
+    }
+    h2{
+      opacity: 0.1;
+    }
+  }
 }

@@ -1,0 +1,15 @@
+<div class="dir_panel">
+  <h2>Sommaire</h2>
+  <p> Parcours Académique </p>
+  <% Sheet.where(title: 'Parcours académique').each do |s|%>
+    <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+  <% end %>
+  <p> Expériences professionelle </p>
+  <% Sheet.where(title: 'Expérience professionnelle').each do |s|%>
+    <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+  <% end %>
+  <p> Situation actuelle </p>
+    <% Sheet.where(title: 'Situation actuelle').each do |s|%>
+    <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+  <% end %>
+</div>
