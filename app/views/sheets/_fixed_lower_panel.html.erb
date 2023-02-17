@@ -1,34 +1,70 @@
   <div class="fixed-lower-panel">
     <div class="buttons-js">
 
-      <% if Sheet.where(id: @sheet.id - 1).count > 0 %>
-      <div class="button-left">
-        <%= link_to image_tag("/assets/arrow-l"), sheet_path(@sheet.id - 1) %>
-      </div>
-      <% end %>
+      <% if @sheet.language === 'french' %>
 
-      <% if Sheet.where(id: @sheet.id + 1).count > 0 %>
-      <div class="button-right">
-        <%= link_to image_tag("/assets/arrow-r"), sheet_path(Sheet.where(id: @sheet.id + 1).first) %>
-      </div>
-      <% end %>
-
-      <% if @sheet.id === Sheet.where(title: @sheet.title).first.id %>
-        <% if Sheet.where(id: @sheet.id - 1).count > 0 %>
-          <div class="button-up">
-            <%= link_to image_tag("/assets/arrow-u"), sheet_path(Sheet.where(title: (Sheet.where(id: Sheet.where(title: @sheet.title).first.id - 1).first.title)).first) %>
+        <% if Sheet.where(id: @sheet.id - 1, language: 'french').count > 0 %>
+          <div class="button-left">
+            <%= link_to image_tag("/assets/arrow-l"), sheet_path(@sheet.id - 1) %>
           </div>
         <% end %>
-      <% elsif Sheet.where(id: @sheet.id - 1).count > 0 %>
-          <div class="button-up">
-            <%= link_to image_tag("/assets/arrow-u"), sheet_path(Sheet.where(title: @sheet.title).first.id) %>
-          </div>
-      <% end %>
 
-      <% if Sheet.where(id: (Sheet.where(title: @sheet.title).last.id + 1)).count > 0 %>
-        <div class="button-down">
-          <%= link_to image_tag("/assets/arrow-d"), sheet_path(Sheet.where(id: Sheet.where(title: @sheet.title).last.id + 1).first) %>
-        </div>
+        <% if Sheet.where(id: @sheet.id + 1, language: 'french').count > 0 %>
+          <div class="button-right">
+            <%= link_to image_tag("/assets/arrow-r"), sheet_path(Sheet.where(id: @sheet.id + 1, language: 'french').first) %>
+          </div>
+        <% end %>
+
+        <% if @sheet.id === Sheet.where(title: @sheet.title, language: 'french').first.id %>
+          <% if Sheet.where(id: @sheet.id - 1, language: 'french').count > 0 %>
+            <div class="button-up">
+              <%= link_to image_tag("/assets/arrow-u"), sheet_path(Sheet.where(title: (Sheet.where(id: Sheet.where(title: @sheet.title).first.id - 1).first.title), language: 'french').first) %>
+            </div>
+          <% end %>
+        <% elsif Sheet.where(id: @sheet.id - 1, language: 'french').count > 0 %>
+          <div class="button-up">
+            <%= link_to image_tag("/assets/arrow-u"), sheet_path(Sheet.where(title: @sheet.title, language: 'french').first.id) %>
+          </div>
+        <% end %>
+
+        <% if Sheet.where(id: (Sheet.where(title: @sheet.title).last.id + 1), language: 'french').count > 0 %>
+          <div class="button-down">
+            <%= link_to image_tag("/assets/arrow-d"), sheet_path(Sheet.where(id: Sheet.where(title: @sheet.title).last.id + 1, language: 'french').first) %>
+          </div>
+        <% end %>
+
+      <% else %>
+
+        <% if Sheet.where(id: @sheet.id - 1, language: 'english').count > 0 %>
+          <div class="button-left">
+            <%= link_to image_tag("/assets/arrow-l"), sheet_path(@sheet.id - 1) %>
+          </div>
+        <% end %>
+
+        <% if Sheet.where(id: @sheet.id + 1, language: 'english').count > 0 %>
+          <div class="button-right">
+            <%= link_to image_tag("/assets/arrow-r"), sheet_path(Sheet.where(id: @sheet.id + 1, language: 'english').first) %>
+          </div>
+        <% end %>
+
+        <% if @sheet.id === Sheet.where(title: @sheet.title, language: 'english').first.id %>
+          <% if Sheet.where(id: @sheet.id - 1, language: 'english').count > 0 %>
+            <div class="button-up">
+              <%= link_to image_tag("/assets/arrow-u"), sheet_path(Sheet.where(title: (Sheet.where(id: Sheet.where(title: @sheet.title).first.id - 1).first.title)).first) %>
+            </div>
+          <% end %>
+        <% elsif Sheet.where(id: @sheet.id - 1, language: 'english').count > 0 %>
+            <div class="button-up">
+              <%= link_to image_tag("/assets/arrow-u"), sheet_path(Sheet.where(title: @sheet.title, language: 'english').first.id) %>
+            </div>
+        <% end %>
+
+        <% if Sheet.where(id: (Sheet.where(title: @sheet.title).last.id + 1), language: 'english').count > 0 %>
+          <div class="button-down">
+            <%= link_to image_tag("/assets/arrow-d"), sheet_path(Sheet.where(id: Sheet.where(title: @sheet.title).last.id + 1, language: 'english').first.id) %>
+          </div>
+        <% end %>
+
       <% end %>
 
     </div>

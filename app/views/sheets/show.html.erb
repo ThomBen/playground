@@ -1,6 +1,8 @@
 <div class="container-fluid">
-  <%= render partial: "upper_dir_panel" %>
-  <div class="fixed-upper-panel">
+
+  <%= render partial: "upper_dir_panel", sheet: @sheet %>
+
+  <div class="fixed-upper-panel <% if @sheet.subtitle === 'Employé polyvalent (Cast Member) - Disney World' %> mb-40 <% end %> ">
     <div class="name">
       Thomas Bensadoun
     </div>

@@ -1,15 +1,35 @@
 <div class="dir_panel">
-  <h2>Sommaire</h2>
-  <p> Parcours Académique </p>
-  <% Sheet.where(title: 'Parcours académique').each do |s|%>
-    <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
-  <% end %>
-  <p> Expériences professionelle </p>
-  <% Sheet.where(title: 'Expérience professionnelle').each do |s|%>
-    <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
-  <% end %>
-  <p> Situation actuelle </p>
-    <% Sheet.where(title: 'Situation actuelle').each do |s|%>
-    <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+  <% if @sheet.language === 'french' %>
+    <h2>Sommaire</h2>
+    <h3>Langue</h3>
+    <h4><%= link_to "EN", sheet_path(Sheet.where(language: 'english').first.id) %></h4>
+    <p> Parcours Académique </p>
+    <% Sheet.where(title: 'Parcours académique').each do |s|%>
+      <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+    <% end %>
+    <p> Expériences professionelle </p>
+    <% Sheet.where(title: 'Expérience professionnelle').each do |s|%>
+      <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+    <% end %>
+    <p> Situation actuelle </p>
+      <% Sheet.where(title: 'Situation actuelle').each do |s|%>
+      <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+    <% end %>
+  <% else %>
+    <h2>Summary</h2>
+    <h3>Language</h3>
+    <h4><%= link_to "FR", sheet_path(Sheet.where(language: 'french').first.id) %></h4>
+    <p> Academic Background </p>
+    <% Sheet.where(title: 'Academic background').each do |s|%>
+      <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+    <% end %>
+    <p> Work Experience </p>
+    <% Sheet.where(title: 'Work experience').each do |s|%>
+      <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+    <% end %>
+    <p> Situation actuelle </p>
+      <% Sheet.where(title: 'Current situation').each do |s|%>
+      <p class='mx-4'><%= link_to s.subtitle, sheet_path(s.id) %></p>
+    <% end %>
   <% end %>
 </div>
